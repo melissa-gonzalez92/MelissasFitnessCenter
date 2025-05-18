@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melissa's Fitness Center</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="stylesss.css">
+
+    <script src="gallery.js" defer></script>
+    <script src="map.js"defer></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo-png.png" style= "width: 45%" alt="Melissa's Fitness Center Logo">
+                
+            </div>
+        </nav>
+            <nav class="horizontalNavigation">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="classes.html">Classes</a></li>
+                  <li><a href="trainers.html">Trainers</a></li>
+                  <li><a href="membership.html">Membership</a></li>
+              </ul>
+          </nav>
+      </header>
+
+<div class="parallax"></div>
+  
+<!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="gym1_wide.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="gym2_wide.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="gym3_wide.jpg" style="width: 100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="gym4_wide.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="gym5_wide.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="gym6_wide.jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="gym1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ready to get fit?">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="gym2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Dont know where to start?">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="gym3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Wanna try out a HIIT class?">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="gym4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Or maybe a yoga class?">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="gym5.jpg" style="width:100%" onclick="currentSlide(5)" alt="we're here to help you">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="gym6.jpg" style="width:100%" onclick="currentSlide(6)" alt=" Join us today!">
+      </div>
+     </div>
+    </div>
+
+
+    <section id="hero">
+        <h2>Welcome to Melissa's Fitness Center</h2>
+        <p>Your journey to a healthier life starts here.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@Melissasfitnesscenter.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Fitness St, Workout City</p>
+    </section>
+    
+
+    <div id="map">
+      <h2>Find Us Here</h2>
+      <div id="mapContainer"></div>
+    </div> 
+
+    <!-- prettier-ignore -->
+    <script>
+      (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+        key: "AIzaSyDdPWyY-mgKBcc4-KGqx41tgmI--r5a7Tk",
+        v: "weekly",
+        // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+        // Add other bootstrap parameters as needed, using camel case.
+      });
+    </script>
+    
+    <footer>
+        <p>&copy; 2025 Melissa's Fitness Center. All rights reserved.</p>
+    </footer>
+
+
+    </body>
+</html>
